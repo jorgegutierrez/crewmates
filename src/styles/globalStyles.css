@@ -1,0 +1,60 @@
+/* Estilos globales */
+
+/* Reset de estilos */
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6e6868;
+  font-size: 26px;
+   margin-top: 4%;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Estilos para el menú lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: none;
+}
+
+.author{
+  display:flex;
+  position: absolute;
+  bottom: 30px;
+}

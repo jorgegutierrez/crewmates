@@ -13,9 +13,11 @@ const DeleteCrewmateButton = ({ crewmate, onDelete }) => {
           throw error;
         }
         console.log('Crewmate deleted successfully:', crewmate.name);
-        onDelete(crewmate.id);
+        onDelete(crewmate.id); // Llamar a la función onDelete para actualizar el estado después de la eliminación
       } catch (error) {
         console.error('Error deleting crewmate:', error.message);
+        // Mostrar un mensaje de error si la eliminación falla
+        alert('An error occurred while deleting the crewmate. Please try again.');
       }
     }
   };

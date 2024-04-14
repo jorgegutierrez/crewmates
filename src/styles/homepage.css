@@ -1,0 +1,33 @@
+/* Estilos para la página de inicio */
+
+/* Contenedor principal */
+.page {
+    text-align: center; /* Centra el contenido */
+  }
+  
+  /* Título */
+  .page h2 {
+    font-size: 72px;
+    margin-bottom: 20px;
+  }
+  
+  /* Párrafo */
+  .page p {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+  
+  /* Contenedor de imágenes */
+  .page .images {
+    display: flex;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Estilos para las imágenes */
+  .page .images img {
+    height: 500px; /* Altura de las imágenes */
+    width: auto; /* Ancho automático */
+  }
+  

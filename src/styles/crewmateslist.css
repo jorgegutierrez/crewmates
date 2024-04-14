@@ -1,0 +1,35 @@
+/* crewmatesListStyles.css */
+
+/* Estilos para el menú de navegación lateral */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333333;
+  color: #f30000;
+  padding-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #555;
+}

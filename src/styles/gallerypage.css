@@ -1,0 +1,45 @@
+.page {
+    display: grid;
+  }
+  
+  .gallery-container {
+    flex: 1; /* El contenedor de la galería ocupará todo el espacio restante */
+    padding: 20px; /* Espacio alrededor de la galería */
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto auto; /* Mostrar hasta 3 cartas por fila */
+    gap: 100px; /* Espacio entre las cartas */
+  }
+  
+  .crewmate {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .crewmate img {
+    width: auto;
+    height: 300px;
+    border-radius: 8px 8px 0 0; /* Borde redondeado solo en la parte superior */
+  }
+  
+  .crewmate p {
+    margin-top: 10px;
+  }
+  
+  .edit-button {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 24px;
+    border: none;
+    border-radius: 11px;
+    padding: 16px 20px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  

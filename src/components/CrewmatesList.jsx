@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import supabase from '../utils/supabaseConfig';
+import '../styles/crewmateslist.css'; // Importa el archivo CSS de estilos desde la carpeta styles
+
 
 const CrewmatesList = () => {
   const [crewmates, setCrewmates] = useState([]);
 
   useEffect(() => {
-    // Función para obtener la lista de compañeros de tripulación desde Supabase
     const fetchCrewmates = async () => {
       try {
         const { data, error } = await supabase.from('crewmates').select('*');
@@ -18,17 +20,29 @@ const CrewmatesList = () => {
       }
     };
 
-    // Llamar a la función para obtener la lista de compañeros de tripulación al cargar el componente
     fetchCrewmates();
   }, []);
 
   return (
     <div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/create">Create a Crewmate!</Link>
+          </li>
+          <li>
+            <Link to="/gallery">Crewmate Gallery</Link>
+          </li>
+        </ul>
+      </nav>
       <h2>List of Crewmates</h2>
       <ul>
         {crewmates.map((crewmate) => (
           <li key={crewmate.id}>
-            <strong>Name:</strong> {crewmate.name} | <strong>Attributes:</strong> {crewmate.attributes}
+            <Link to={`/crewmate/${crewmate.id}`}>{crewmate.name}</Link>
           </li>
         ))}
       </ul>

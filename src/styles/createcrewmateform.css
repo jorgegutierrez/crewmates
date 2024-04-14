@@ -1,0 +1,74 @@
+/* createCrewmateFormStyles.css */
+
+.crewmate-image {
+  height: 300px; /* Establece la altura en 100 píxeles */
+  width: auto; /* El ancho se ajustará automáticamente para mantener la proporción */
+}
+.create-crewmate-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto; /* Centrar el formulario horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Borde redondeado */
+}
+
+h2 {
+  font-size: 72px;
+  margin-bottom: 30px;
+}
+
+img {
+  display: block; /* Hace que la imagen sea un bloque para centrarla */
+  margin: 0 auto 20px; /* Centrar la imagen y agregar un espacio inferior */
+}
+
+
+label {
+  margin-bottom: 5px; /* Espaciado inferior del etiqueta */
+}
+
+input[type="text"] {
+  padding: 8px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espaciado inferior del campo de texto */
+  border: 1px solid #ccc; /* Borde del campo de texto */
+  border-radius: 4px; /* Borde redondeado */
+}
+
+
+
+button {
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  border: none; /* Eliminar borde */
+  border-radius: 4px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+button:hover {
+  background-color: #0056b3; /* Cambiar el color de fondo al pasar sobre el botón */
+}
+
+.mini-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+  margin: 50px auto 0;
+}
+
+.card {
+  text-align: left;
+}
+
+.card ul{
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li{
+  text-align: left;
+}
